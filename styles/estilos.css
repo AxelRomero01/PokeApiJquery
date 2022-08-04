@@ -1,0 +1,39 @@
+.cajaInicio{
+    margin-top: 200px;
+}
+.links{
+    text-decoration: none;
+}
+.caja1{
+    width: 30%;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    overflow-y: auto;
+    float: left;
+    margin: 10px;
+}
+.caja2{
+    width: 30%;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    overflow-y: auto;
+    float: left;
+    margin: 10px;
+}
+.caja3{
+    width: 30%;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    overflow-y: auto;
+    float: left;
+    margin: 10px;
+}
+.imgPokemon{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+

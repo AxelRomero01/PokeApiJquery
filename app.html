@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <title>Pokedex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/app.js"></script>
+
+</head>
+<body class="bg-danger">
+    <header>
+        <div class="container border border-secondary border-4 bg-success text-center my-3 text-uppercase text-warning">
+            <h1>
+                Pokedex App
+            </h1>
+        </div>
+        <div class="dropdown mx-4 my-4">
+            <button class="btn btn-secondary m-2">
+                <a class="text-decoration-none text-light" href="welcome.html">Home</a>
+            </button>
+            <button type="button" class="btn btn-secondary dropdown-toggle m-2" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="https://www.linkedin.com/in/axel-romero-a15549197/" target="_blank" class="dropdown-item">LinkedIn</a></li>
+            </ul>
+            <button type="button" class="btn btn-secondary dropdown-toggle m-2" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Informacion
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="ayuda.html" class="dropdown-item">Ayuda</a></li>
+                <li><a href=" https://pokeapi.co/" target="_blank" class="dropdown-item">Api Pokemon</a></li>
+            </ul>
+        </div>
+    </header>
+
+    </br>
+    </br>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-sm-center text-wrap">
+            <img src="img/Articuno.png" class="img-fluid d-block mx-auto w-25" alt="Articuno">
+              <h5>Articuno</h5>
+              <p>Es un Pokémon legendario del tipo hielo/volador introducido en la primera generación. Es la primera de las tres aves legendarias, las otras son Zapdos y Moltres. En Pokémon Platino, Pokémon X y Pokémon Y es un Pokémon errante. </p>
+          </div>
+          <div class="carousel-item text-sm-center text-wrap">
+            <img src="img/Charizard.png" class="img-fluid d-block mx-auto w-25" alt="Charizard">
+            <h5>Charizard</h5>
+            <p>Es un Pokémon de tipo fuego/volador, introducido en la primera generación. Es la evolución de Charmeleon y, a partir de la sexta generación, puede megaevolucionar en Mega-Charizard X o en Mega-Charizard Y. En la Octava generación puede realizar Gigamax y transformarse en Charizard Gigamax. </p>
+          </div>
+          <div class="carousel-item text-sm-center text-wrap">
+            <img src="img/Squirtle.png" class="img-fluid d-block mx-auto w-25" alt="Squirtle">
+            <h5>Squirtle</h5>
+            <p>Es un Pokémon de tipo agua introducido en la primera generación. Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región Kanto, junto a Bulbasaur y Charmander, excepto en Pokémon Amarillo. </p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    
+        <article class="caja1">
+            <div class="container bg-success">
+                <h1 class="text-wrap text-center">
+                    Lista en formato Json de los Pokemons
+                </h1>
+                <button id="buttomVer" type="button" class="bg-warning d-block my-auto mx-auto">Ver</button>
+            </div>
+            <p id="listaPokemons" class="text-break my-auto mx-auto"></p>
+        </article>
+        
+        <seccion class="caja2">
+            <div id="sectionPokemon">
+
+            </div>
+        </seccion>
+
+        <section class="caja3" id="abilityPokemons">
+            <div class="container bg-success" >
+                <h1 class="text-wrap text-center">
+                    Busca tu Pokemon
+                </h1>
+                <input type="search" class="input-group d-block w-auto mx-auto" name="buscar" id="buscar">
+                <button id="buttomBuscar" type="button" class="bg-warning d-block my-auto mx-auto">Buscar</button>
+            </div>
+        </section>
+</body>
+</html>
